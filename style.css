@@ -8,6 +8,7 @@ html {
 .button{
   padding: 20px;
   margin: 0 2px;
+  width: 40px;
   border: 2px solid black;
   border-radius: 5px;
   cursor: pointer;
@@ -16,9 +17,12 @@ html {
   margin: 5px 0;
 }
 .row .input{
-  margin: 3px;
-  padding: 9px 31px;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 0.85rem;
+    margin: 5px;
+    padding: 9px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+.r1{
+  width: 95px;
 }
