@@ -11,4 +11,6 @@
   .flex-col{
     flex-direction: column;
   }
-  
+.bg{
+  background-color: lightseagreen;
+}  
