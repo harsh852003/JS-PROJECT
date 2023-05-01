@@ -9,19 +9,26 @@ html {
   padding: 20px;
   margin: 0 2px;
   width: 40px;
-  border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 2px;
+  border-color: floralwhite;
+  background-color: whitesmoke;
   cursor: pointer;
+  box-shadow: 2px 1.5px 1.5px white;
+  
+  
 }
 .row{
   margin: 5px 0;
+  
+  
 }
 .row .input{
     margin: 5px;
     padding: 9px 15px;
-    border: 2px solid black;
-    border-radius: 5px;
+    box-shadow: 1.7px 2px 1px darkgrey;;
+    border-radius: 1px;
     font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif white;
 }
 .r1{
   width: 95px;
