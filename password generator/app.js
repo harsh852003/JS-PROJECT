@@ -31,6 +31,8 @@ const generatePassword = (password = "") =>{
     if(symbolInput.checked){
         password += getRandomData(symbolSet)
     }
+        //recursive function condition 
+
     if(password.length < totalChar.value){
         return generatePassword(password)
     }
