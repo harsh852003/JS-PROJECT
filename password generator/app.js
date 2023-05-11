@@ -5,7 +5,7 @@ const symbolSet = "!@#$%^&*()_+/"
 
 //selector
 
-const passBox = document.getElementByIdTagName("pass-box")
+const passBox = document.getElementsByTagName("pass-box")
 const totalChar = document.getElementById("total-char")
 const upperInput = document.getElementById("upper-case")
 const lowerInput = document.getElementById("lower-case")
@@ -16,16 +16,32 @@ const getRandomData =  (dataSet) => {
     return dataSet[Math.floor(Math.random() * dataSet.length)]
 }  
 
+//random input generator
+
 const generatePassword = (password = "") =>{
     if(upperInput.checked){
         password += getRandomData(upperSet)
     }
+    if(lowerInput.checked){
+        password += getRandomData(lowerSet)
+    }
+    if(numberInput.checked){
+        password += getRandomData(numberSet)
+    }
+    if(symbolInput.checked){
+        password += getRandomData(symbolSet)
+    }
+    if(password.length < totalChar.value){
+        return generatePassword(password)
+    }
+
     console.log(password)
 }
 
-document.getElementById("btn").addEventListener{
-    "click",
-    function(){
-        generatePassword()
+document.getElementById("btn").addEventListener
+{
+    "click" ,
+    function() {
+        generatePassword();
     }
 }
