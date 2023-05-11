@@ -18,7 +18,7 @@ const getRandomData =  (dataSet) => {
 
 //random input generator
 
-const generatePassword = (password = "") =>{
+const generatePassword = (password = "") => {
     if(upperInput.checked){
         password += getRandomData(upperSet)
     }
@@ -40,10 +40,9 @@ const generatePassword = (password = "") =>{
     console.log(password)
 }
 
-document.getElementById("btn").addEventListener
-{
+document.getElementById("btn").addEventListener(
     "click" ,
     function() {
         generatePassword();
     }
-}
+)
