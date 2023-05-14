@@ -5,7 +5,7 @@ const symbolSet = "!@#$%^&*()_+/"
 
 //selector
 
-const passBox = document.getElementsByTagName("pass-box")
+const passBox = document.getElementById("pass-box")
 const totalChar = document.getElementById("total-char")
 const upperInput = document.getElementById("upper-case")
 const lowerInput = document.getElementById("lower-case")
@@ -37,8 +37,10 @@ const generatePassword = (password = "") => {
         return generatePassword(password)
     }
 
-    console.log(password)
+    passBox.innerText = truncateString(password,totalChar.value);
 }
+generatePassword();
+
 
 document.getElementById("btn").addEventListener(
     "click" ,
@@ -46,3 +48,13 @@ document.getElementById("btn").addEventListener(
         generatePassword();
     }
 )
+
+function truncateString(str,num){
+    if(str.length > num){
+        let subStr = str.substring(0,num);
+        return subStr
+    }
+    else{
+        return str
+    }
+}
