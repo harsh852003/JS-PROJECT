@@ -1,7 +1,7 @@
 const upperSet = "ABCDEFGHIJKLMONPQRSTUVWXYZ"
 const lowerSet = "abcdefghijklmnopqrstuvwxyz"
 const numberSet = "1234567890"
-const symbolSet = "!@#$%^&*()_+/"
+const symbolSet = "!@#$%^&*()_+/|?"
 
 //selector
 
